@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage Example</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Session Storage Example</h2>
+        <form id="dataForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" required>
+            
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" required>
+            
+            <label for="phoneInput">Phone:</label>
+            <input type="tel" id="phoneInput" required>
+            
+            <button type="button" onclick="saveData()">Save Data</button>
+            <button type="button" onclick="loadData()">Load Data</button>
+            <button type="button" onclick="clearData()">Clear Data</button>
+        </form>
+
+        <div id="dataDisplay">
+            <p id="displayName"></p>
+            <p id="displayEmail"></p>
+            <p id="displayPhone"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
